@@ -1,25 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import ErrorBoundary from './ErrorBoundary/ErrorBoundary';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ErrorBoundary>
+      <div className="App">
+        <h1>Users Authentication</h1>
+      </div>
+    </ErrorBoundary>
   );
 }
 
 export default App;
+
+
+
+//then pages sections like about, contact, projects. will be rendered in this main App.js file
+//took the liberty of implementing the ErrorBoundary
