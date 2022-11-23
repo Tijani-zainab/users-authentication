@@ -1,12 +1,12 @@
 import { ErrorBoundary as ReactErrorBoundary } from 'react-error-boundary';
-import './ErrorBoundary.css';
+import styles from './ErrorBoundary.module.css';
 
 const ErrorFallback = ({ error, resetErrorBoundary }) => {
   return (
-    <div role="alert" className='error-boundary-page'>
+    <div role="alert" className={styles.errorBoundaryPage}>
       <p>Something's not right:</p>
       <pre>{error.message}</pre>
-      <button className='try-again-btn' onClick={resetErrorBoundary}>Try again</button>
+      <button className={styles.tryAgainBtn} onClick={resetErrorBoundary}>Try again</button>
     </div>
   );
 };
