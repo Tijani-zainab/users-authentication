@@ -1,11 +1,13 @@
 import './App.css';
 import ErrorBoundary from './ErrorBoundary/ErrorBoundary';
+import Projects from './Pages/Projects/Projects';
 
 function App() {
   return (
     <ErrorBoundary>
       <div className="App">
         <h1>Users Authentication</h1>
+        <Projects />
       </div>
     </ErrorBoundary>
   );

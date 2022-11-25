@@ -1,5 +1,84 @@
-
-
-.projectStyle {
-    color: red;
+.Projects > * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
+.Projects {
+  background-color: rgba(253,243,230,255);
+  color: rgba(37,42,64,255);
+  width: 100vw;
+  padding: 70px 40px;
+  /* I expect any part that can't fit to 
+    be cut out of the page, since overflow is hidden, I don't 
+    expect to see any horizontal scroll bar.
+  */
+  overflow: hidden;
+}
+.Projects > h2 {
+    margin: 0;
+    font-size: 2.4rem;
+}
+.Projects > .projectPara {
+    width: 100vw;
+    padding:0 40px;
+    padding-left: 0;
+    font-size: 1.04rem;
+}
+.Projects ul {
+    display: flex;
+    margin-top: 20px;
+    /* overflow-x: scroll; */
+    background-color: rgba(253,243,230,255);
+    width: fit-content;
+    padding: 0;
+}
+.Projects ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    color: rgba(37,42,64,255);
+    padding: 40px 20px;
+    list-style: none;
+    margin: 0 10px;
+    width: 240px;
+    border-radius: 10px;
+}
+.Projects ul li.first {
+    margin-left: 0;
+}
+.Projects ul li .projectTitle {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.Projects ul li .liveLinks {
+   display: flex;
+   width: 100%;
+   /* padding: 0 20px; */
+   justify-content: space-between;
+}
+.Projects ul li .liveLinks a {
+    font-size: 0.7rem;
+    /* width: 100%; */
+    color: rgba(37,42,64,255);
+    font-weight: bold;
+    padding: 7px;
+    border-radius: 4px;
+    box-shadow: 0 0 4px 3px  rgba(253,243,230,255);
+}
+.Projects .paginationButtons {
+    margin-left: auto;
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-right: 30px;
+    width: 100px;
+}
+.Projects .paginationButtons span {
+    cursor: pointer;
+    padding: 10px;
+}
+.Projects ul .paginationButtons span:hover {
+    background-color: yellowgreen;
+}
+
