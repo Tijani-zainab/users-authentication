@@ -1,6 +1,7 @@
 import './App.css';
 import ErrorBoundary from './ErrorBoundary/ErrorBoundary';
 import Projects from './Pages/Projects/Projects';
+import Contact from './Pages/Contact/Contact';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <div className="App">
         <h1>Users Authentication</h1>
         <Projects />
+        <Contact />
       </div>
     </ErrorBoundary>
   );
