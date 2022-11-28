@@ -7,7 +7,8 @@
   background-color: rgba(253,243,230,255);
   color: rgba(37,42,64,255);
   width: 100%;
-  padding: 70px 40px;
+  padding: 50px 40px;
+  padding-top: 30px;
   padding-right: 0;
   /* I expect any part that can't fit to 
     be cut out of the page, since overflow is hidden, I don't 
@@ -33,6 +34,7 @@
     width: 100%;
     padding: 0;
     overflow-x: hidden;
+    /* justify-content: center; */
 }
 .Projects ul > * {
     flex-basis: 240px;
@@ -48,6 +50,7 @@
     list-style: none;
     margin: 0 10px;
     width: 240px;
+    height: 220px;
     border-radius: 10px;
 }
 .Projects ul li.first {
@@ -61,6 +64,7 @@
 .Projects ul li .liveLinks {
    display: flex;
    width: 100%;
+   margin-top: auto;
    /* padding: 0 20px; */
    justify-content: space-between;
 }
@@ -117,4 +121,38 @@
 }
 .Projects .colorDots .showColor {
     background-color: rgba(69,66,126,255);
+}
+
+@media (min-width : 800px) {
+    .Projects ul > * {
+        flex-basis: 340px;
+    }
+    .Projects ul li {
+        width: 340px;
+        height: 300px;
+    }
+    .Projects ul li .projectTitle {
+        font-size: 1.5rem;
+    }
+    .Projects ul li .liveLinks a {
+        font-size: 1.1rem;
+    }
+}
+@media (min-width : 1200px) {
+    .Projects ul > * {
+        flex-basis: 540px;
+    }
+    .Projects ul li {
+        width: 540px;
+        height: 320px;
+    }
+}
+@media (min-width : 1400px) {
+    .Projects ul > * {
+        flex-basis: 680px;
+    }
+    .Projects ul li {
+        width: 680px;
+        height: 320px;
+    }
 }
