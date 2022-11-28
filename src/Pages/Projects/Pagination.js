@@ -7,21 +7,32 @@ export default function Pagination({ data }) {
 
   function paginateData() {
     let paginatedData = data.slice(startIndex);
+    // console.log(paginatedData);
     return paginatedData;
   }
-  
-//   console.log(data);
-//   console.log(data.slice(2));
+
+  // console.log(startIndex);
+  //   console.log(data.slice(2));
   return (
     <div>
       <div className={styles.paginationButtons}>
-        <span onClick={() => setStartIndex((prevIndex) => prevIndex - 1)} > - </span>
-        <span onClick={() => setStartIndex((prevIndex) => prevIndex + 1)}> + </span>
+        <span
+          onClick={() => setStartIndex((prevIndex) => prevIndex - 1)}
+          className={`${startIndex === 0 ? styles.disable : ""}`}
+        >
+          {"<"}
+        </span>
+        <span
+          onClick={() => setStartIndex((prevIndex) => prevIndex + 1)}
+          className={`${startIndex === 4 ? styles.disable : ""}`}
+        >
+          {">"}
+        </span>
       </div>
       <ul>
         {paginateData().map((project, index) => {
           return (
-            <li key={index} className={`${index === 0? styles.first : ''}`}>
+            <li key={index} className={`${index === 0 ? styles.first : ""}`}>
               <div>{index + 1}</div>
               <div className={styles.projectTitle}>{project.title}</div>
               <p>{project.description}</p>
@@ -33,6 +44,17 @@ export default function Pagination({ data }) {
           );
         })}
       </ul>
+      <div className={styles.colorDots}>
+        {data.map((_, index) => {
+          return (
+            <span 
+               className={`${styles.dot} ${index === startIndex ? styles.showColor : ""}`}
+               key={index}
+               >
+            </span>
+          );
+        })}
+      </div>
     </div>
   );
 }
