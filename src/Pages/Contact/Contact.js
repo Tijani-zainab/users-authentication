@@ -5,7 +5,7 @@ const Contact = () => {
         <div className={styles.contact}>
             <h2 className={styles.contactHeading}>Get In touch with us</h2>
             <div className={styles.emailButtonWrapper}>
-                <input placeholder='Enter your email' />
+                <input type="email" placeholder='Enter your email' id={styles.enterEmail} />
                 <button>Signup</button>
             </div>
         </div>

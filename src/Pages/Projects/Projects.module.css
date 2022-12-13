@@ -45,7 +45,7 @@
     flex-direction: column;
     align-items: center;
     background-color: white;
-    color: rgba(37,42,64,255);
+    color: rgba(69,66,126,255);
     padding: 40px 20px;
     list-style: none;
     margin: 0 10px;
@@ -122,6 +122,8 @@
 .Projects .colorDots .showColor {
     background-color: rgba(69,66,126,255);
 }
+
+/* MEDIA QUERIES BEGINS */
 
 @media (min-width : 800px) {
     .Projects ul > * {
