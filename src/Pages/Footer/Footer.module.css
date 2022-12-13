@@ -1,0 +1,165 @@
+footer {
+  background-color: rgba(243, 194, 129, 255);
+  color: #3e3d4a;
+}
+
+footer .footerTop {
+  /* display: flex; */
+  font-size: 1.2rem;
+  padding: 50px 24px;
+}
+footer .footerTop > div {
+  margin-top: 33px;
+}
+footer .footerTop > div:first-child {
+  margin-top: 0;
+}
+footer .footerTop > div > .altSchool {
+  font-size: 1.2rem;
+}
+footer .footerTop > div > .altSchool > p:first-child {
+  font-weight: bold;
+  font-size: 2.4rem;
+}
+footer .footerTop > div > .socials {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: aliceblue; */
+  width: 200px;
+  margin-top: 10px;
+}
+footer .footerTop > div > .socials > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 30px;
+  height: 30px;
+  color: rgba(243, 194, 129, 255);
+  font-weight: bold;
+  border-radius: 50%;
+  cursor: pointer;
+}
+footer .footerTop > .footerContactUs {
+  font-size: 1.2rem;
+}
+footer .footerTop > .footerContactUs > div:first-child {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+footer .footerTop > .footerFindUs {
+  font-size: 1.2rem;
+}
+footer .footerTop > .footerFindUs > div:first-child {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.footerBottom {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(244, 207, 153, 255);
+  padding: 30px 20px;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.footerBottom > div {
+  margin-top: 10px;
+}
+.footerBottom > div > span {
+  font-size: 1.3rem;
+}
+
+/* .footerBottom .terms {
+    margin-right: 10px;
+} */
+
+/* MEDIA QUERIES BEGINS */
+@media (min-width: 1000px) {
+  footer .footerTop {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    padding: 50px 94px;
+  }
+  footer .footerTop > div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    max-width: 250px;
+    /* background-color: yellow; */
+  }
+  
+  footer .footerTop > .footerContactUs > div:first-child {
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-bottom: 11px;
+  }
+  footer .footerTop > .footerFindUs > div:first-child {
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-bottom: 11px;
+  }
+  /* Footer bottom */
+  .footerBottom {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    background-color: rgba(244, 207, 153, 255);
+    padding: 30px 20px;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  .footerBottom > div {
+    margin-top: 10px;
+  }
+  .footerBottom .terms {
+    margin-left: auto;
+    margin-right: 16px;
+  }
+}
+@media (min-width: 1200px) { 
+  footer .footerTop {
+    padding: 0px 50px;
+    height: 240px;
+    align-items: center;
+  }
+  footer .footerTop > div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    max-width: 350px;
+    /* background-color: yellow; */
+  }
+  footer .footerTop > div {
+    margin-top: 0px;
+    /* background-color: blue; */
+  }
+  footer .footerTop > div > .altSchool {
+    font-size: 1.4rem;
+    width: 400px;
+  }
+  footer .footerTop > .footerContactUs {
+    font-size: 1.4rem;
+    /* color: yellow; */
+  }
+  footer .footerTop > .footerContactUs > div:first-child {
+    font-weight: bold;
+    font-size: 1.7rem;
+  }
+  footer .footerTop > .footerFindUs {
+    font-size: 1.4rem;
+  }
+  footer .footerTop > .footerFindUs > div:first-child {
+    font-weight: bold;
+    font-size: 1.7rem;
+  }
+}
+@media (min-width: 1400px) {  
+  footer .footerTop {
+    padding: 0px 150px;
+  }
+  footer .footerTop > div {
+    max-width: 450px;
+  }
+}
